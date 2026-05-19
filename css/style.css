@@ -5,11 +5,9 @@
 }
 
 :root{
-    --color1: #a846a0;
-    --color2: #1d3575;
-    --color3: #e3d26f;
-    --color4: #2f1b25;
-    --color5: #f6f8ff;
+    --color1: #1d3575;
+    --color2: #e3d26f;
+    --color3: #f6f8ff;
     --transition: 0.3s ease;
 }
 
@@ -20,7 +18,7 @@ html{
 body{
     font-family: "Inconsolata", monospace;
     background: var(--color3);
-    color: var(--color2);
+    color: var(--color1);
     line-height: 1.7;
 }
 
@@ -42,30 +40,12 @@ ul{
     list-style: none;
 }
 
-.btn{
-    display: inline-block;
-    background: var(--color2);
-    color: var(--color5);
-    padding: 14px 35px;
-    border-radius: 50px;
-    font-size: 1.2rem;
-    font-weight: 600;
-    transition: var(--transition);
-}
-
-.btn:hover{
-    background: var(--color5);
-    color: var(--color2);
-    transform: translateY(-3px);
-}
-
 /* =========================
    TOPBAR
 ========================= */
 
 .topbar{
-    /* background: var(--bg-color); */
-    color: var(--color2);
+    color: var(--color1);
     padding: 0.9rem 5%;
     display: flex;
     justify-content: space-between;
@@ -91,7 +71,7 @@ ul{
 }
 
 .topbar i{
-    color: var(--color2);
+    color: var(--color1);
 }
 
 /* =========================
@@ -104,7 +84,7 @@ ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--color2);
+    background: var(--color1);
     color: var(--color3);
     position: sticky;
     top: 0;
@@ -125,14 +105,15 @@ ul{
     font-size: 1rem;
     font-weight: 600;
     position: relative;
-    color: var(--color5);
+    /* color: var(--color3); */
 }
 
 .nav-links a:hover{
-    background-color: var(--color5);
-    color: var(--color2);
+    background-color: var(--color3);
+    color: var(--color1);
     border-radius: 50px;
     padding: 3.5px 10px;
+    transform: translateY(-3px);
     transition: var(--transition);
 }
 
@@ -157,20 +138,19 @@ ul{
 }
 
 .nav-icons a{
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    background: var(--color5);
-    color: var(--color2);
+    color: var(--color3);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .nav-icons a:hover{
-    background: var(--color4);
-    color: var(--color5);
-    /* transform: scale(1.1); */
+    background: var(--color3);
+    color: var(--color1);
+    transform: translateY(-3px);
     transition: var(--transition);
 }
 
@@ -191,7 +171,6 @@ ul{
     font-size: 4rem;
     line-height: 1.2;
     margin-bottom: 1.5rem;
-    color: var(--color4);
     font-family: "Almendra", serif;
 }
 
@@ -205,6 +184,23 @@ ul{
     border-radius: 30px;
     box-shadow: 5px 5px 40px var(--color2);
     object-fit: cover;
+}
+
+.btn{
+    display: inline-block;
+    background: var(--color2);
+    color: var(--color5);
+    padding: 14px 35px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.btn:hover{
+    background: var(--color1);
+    color: var(--color2);
+    transform: translateY(-3px);
 }
 
 /* =========================
@@ -239,7 +235,6 @@ ul{
 
 .feature-card h3{
     margin-bottom: 1rem;
-    color: var(--color1);
 }
 
 .section-title{
@@ -264,7 +259,7 @@ ul{
 
 .products{
     padding: 6rem 5%;
-    background: #fafafa;
+    background: var(--color3);
 }
 
 .product-grid{
@@ -274,7 +269,7 @@ ul{
 }
 
 .product-card{
-    background: var(--color2);
+    background: var(--color1);
     border-radius: 25px;
     overflow: hidden;
     transition: var(--transition);
@@ -311,7 +306,7 @@ ul{
     width: 100%;
     padding: 12px;
     border: none;
-    background: var(--color3);
+    background: var(--color2);
     color: var(--color1);
     border-radius: 50px;
     cursor: pointer;
@@ -320,8 +315,8 @@ ul{
 }
 
 .product-content button:hover{
-    background: var(--color1);
-    color: var(--color3);
+    background: var(--color3);
+    color: var(--color1);
     transition: var(--transition);
 }
 
@@ -361,7 +356,7 @@ ul{
     left: 20px;
     background-color: var(--color2);
     padding: 10px 20px;
-    color: var(--color3);
+    color: var(--color1);
     font-size: 1.5rem;
     font-family: "Almendra", serif;
 }
@@ -388,13 +383,13 @@ ul{
 .about-text h2{
     font-size: 3rem;
     margin-bottom: 1.5rem;
-    color: var(--color3);
+    color: var(--color2);
     font-family: "Almendra", serif;
 }
 
 .about-text p{
     margin-bottom: 1.2rem;
-    font-size: 1.05rem;
+    font-size: 1.2rem;
     color: var(--color3);
 }
 
@@ -404,7 +399,6 @@ ul{
 
 footer{
     background: var(--color3);
-    color: var(--color2);
     padding-top: 5rem;
 }
 
@@ -424,7 +418,7 @@ footer{
 .footer-box p,
 .footer-box li{
     margin-bottom: 1rem;
-    color: #cccccc;
+    color: #2c3c2c;
 }
 
 .footer-box ul li a{
@@ -432,7 +426,26 @@ footer{
 }
 
 .footer-box ul li a:hover{
-    color: var(--color2);
+    color: var(--color1);
+}
+
+.footer-box-links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.7rem;
+}
+
+.footer-box-links a{
+    color: #2c3c2c;
+}
+
+.footer-box-links a:hover{
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 50px;
+    background-color: var(--color1);
+    color: var(--color3);
+    transition: var(--transition);
 }
 
 .social-icons{
@@ -445,6 +458,7 @@ footer{
     height: 45px;
     border-radius: 50%;
     background: var(--color1);
+    color: var(--color3);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -453,14 +467,14 @@ footer{
 
 .social-icons a:hover{
     background: var(--color2);
-    color: var(--color3);
+    color: var(--color1);
 }
 
 .copyright{
     text-align: center;
     padding: 1.5rem;
     border-top: 1px solid rgba(55,55,55,0.5);
-    color: #aaaaaa;
+    color: #2c3c2c;
 }
 
 /* =========================
