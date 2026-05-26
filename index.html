@@ -7,24 +7,30 @@
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Almendra:wght@400;700&family=Inconsolata:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    
+
 
     <!-- External CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body>    
 
-    <!-- HEADER -->
-    <header>
-
-        <!-- Topbar -->
-        <section class="topbar">
+        <!-- <section class="topbar">
 
             <div class="contact-info">
                 <a href="mailto:bellosumbo@gmail.com">
@@ -50,14 +56,15 @@
                 </p>
             </div>
 
-        </section>
+        </section> -->
 
-        <!-- Navigation -->
+    <!-- <header>
+        
         <nav class="navbar">
 
-            <!-- <div class="logo">
+            <div class="logo">
                 <img src="images/Presentation1.svg" alt="My Gem Corner Logo" width="250" height="100">
-            </div> -->
+            </div>
 
             <ul class="nav-links">
                 <li><a href="#">Home</a></li>
@@ -75,12 +82,39 @@
 
         </nav>
 
-    </header>
+    </header> -->
 
     <!-- HERO SECTION -->
     <main>
 
-        <section class="hero">
+        <section class="hero-container">
+
+        <div class="">
+            <nav class="navbar">
+
+            <!-- <div class="logo">
+                <img src="images/Presentation1.svg" alt="My Gem Corner Logo" width="250" height="100">
+            </div> -->
+
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#collections">Collections</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="search-bar">
+                <input type="text" placeholder="explore our products"/><i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div class="nav-icons">
+                <!-- <a href="#"></a>
+                <a href="#"><i class="fa-regular fa-heart"></i></a> -->
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+
+        </nav>
 
             <div class="hero-text">
                 <h1>Luxury Fashion Accessories That Define Your Style</h1>
@@ -95,12 +129,15 @@
                     Shop Now
                 </a>
             </div>
+        </div>
 
             <div class="hero-image">
-                <img src="images/bgimage.jpeg" alt="Luxury Fashion Accessories">
+                <img src="images/MGC-10.jpg" alt="Luxury Fashion Accessories">
             </div>
 
         </section>
+        
+        
 
         <!-- FEATURE SECTION -->
         <section class="features">
@@ -108,24 +145,36 @@
             <article class="feature-card">
                 <i class="fa-solid fa-gem"></i>
                 <h3>Premium Jewelry</h3>
+                <a href="#" class="collection-card">
+                    <img src="images/camera.jpg" alt="Rings">
+                </a>
                 <p>Elegant necklaces, rings, bracelets, and earrings.</p>
             </article>
 
             <article class="feature-card">
                 <i class="fa-solid fa-clock"></i>
                 <h3>Luxury Watches</h3>
+                <a href="#" class="collection-card">
+                    <img src="images/backpack.jpg" alt="Bracelets">
+                </a>
                 <p>Classic and modern wristwatches for every occasion.</p>
             </article>
 
             <article class="feature-card">
                 <i class="fa-solid fa-glasses"></i>
                 <h3>Stylish Glasses</h3>
+                <a href="#" class="collection-card">
+                    <img src="images/wristwatch.jpg" alt="Earrings">
+                </a>
                 <p>Fashionable anti-blue and designer glasses.</p>
             </article>
 
             <article class="feature-card">
                 <i class="fa-solid fa-shoe-prints"></i>
                 <h3>Quality Shoes</h3>
+                <a href="#" class="collection-card">
+                    <img src="images/shoe.jpg" alt="Shoes">
+                </a>
                 <p>Trendy footwear made for comfort and style.</p>
             </article>
 
@@ -134,14 +183,13 @@
         <!-- PRODUCTS SECTION -->
         <section class="products" id="products">
 
-            <div class="section-title">
+            <!-- <div class="section-title">
                 <h2>Featured Products</h2>
                 <p>Explore our latest collections</p>
             </div>
 
             <div class="product-grid">
 
-                <!-- Product Card -->
                 <article class="product-card">
 
                     <img src="images/backpack.jpg" alt="Gold Jewelry">
@@ -156,7 +204,6 @@
 
                 </article>
 
-                <!-- Product Card -->
                 <article class="product-card">
 
                     <img src="images/wristwatch.jpg" alt="Luxury Wristwatch">
@@ -171,7 +218,6 @@
 
                 </article>
 
-                <!-- Product Card -->
                 <article class="product-card">
 
                     <img src="images/glass.jpg" alt="Fashion Glasses">
@@ -186,7 +232,6 @@
 
                 </article>
 
-                <!-- Product Card -->
                 <article class="product-card">
 
                     <img src="images/shoe.jpg" alt="Designer Shoes">
@@ -203,10 +248,10 @@
 
             </div>
 
-        </section>
+        </section> -->
 
         <!-- COLLECTIONS -->
-        <section class="collections" id="collections">
+        <!-- <section class="collections" id="collections">
 
             <div class="section-title">
                 <h2>Browse Categories</h2>
@@ -234,7 +279,7 @@
                     <h3>Shoes</h3>
                 </a>
 
-            </div>
+            </div> -->
 
         </section>
 
@@ -242,14 +287,14 @@
         <section class="about" id="about">
 
             <div class="about-image">
-                <img src="images/Presentation1.svg" alt="My Gem Corner Store">
+                <img src="images/Icon Coloured.png" alt="My Gem Corner logo">
             </div>
 
             <div class="about-text">
-                <h2>About MyGemCorner</h2>
+                <h2>About My Gem Corner</h2>
 
                 <p>
-                    At MyGemCorner, we believe fashion is more than
+                    At My Gem Corner, we believe fashion is more than
                     appearance. It is confidence, elegance, and personality.
                     Our store provides carefully selected luxury accessories
                     and fashion items that combine quality with affordability.
@@ -291,6 +336,11 @@
                         <i class="fa-solid fa-envelope"></i>
                         bellosumbo@gmail.com
                     </a>
+
+                    <p>
+                        <i class="fa-regular fa-clock"></i>
+                        Mon - Sat | 8:00AM - 8:00PM
+                    </p>
                 </div>
 
             </section>
